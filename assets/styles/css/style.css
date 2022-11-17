@@ -7,7 +7,7 @@
   --shade-dark: #dcdcdc;
   --shade-light: #f3f3f3;
   --main-transition: 0.3s;
-  /* --color-secondary: 
+  /* --color-secondary:
   --color-transparent:
   --section-padding: */
 }
@@ -90,10 +90,10 @@
 @keyframes ch-bg {
   0%,
   100% {
-    background-image: url(/assets/resources/img/discount-background1.jpg);
+    background-image: url(/assets/resources/img/discount-background1.avif);
   }
   50% {
-    background-image: url(/assets/resources/img/discount-background2.jpg);
+    background-image: url(/assets/resources/img/discount-background2.avif);
   }
 }
 /* End Animation */
@@ -255,7 +255,7 @@ body {
 
 /* * Start Dots */
 .dots {
-  background-image: url(/assets/resources/img/dots.png);
+  background-image: url(/assets/resources/img/dots.avif);
   position: absolute;
   background-repeat: no-repeat;
   width: 186px;
@@ -1673,7 +1673,7 @@ body {
 .stats {
   padding: var(--section-padding);
   position: relative;
-  background-image: url(/assets/resources/img/stats.jpg);
+  background-image: url(/assets/resources/img/stats.avif);
   background-size: cover;
   min-height: 20rem;
 }
@@ -1775,7 +1775,7 @@ body {
 }
 
 .discount .image {
-  background-image: url(/assets/resources/img/discount-background1.jpg);
+  background-image: url(/assets/resources/img/discount-background1.avif);
   background-size: cover;
   position: relative;
   flex-basis: 50%;
