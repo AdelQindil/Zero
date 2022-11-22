@@ -11,6 +11,7 @@
   --color-transparent:
   --section-padding: */
 }
+
 /* End Variables */
 
 /* Start Animation */
@@ -350,13 +351,6 @@ body {
   }
 }
 
-.main-header .main-nav > li:hover .mega-menu {
-  /* todo click JS */
-  opacity: 1;
-  z-index: 100;
-  top: calc(100% + 5px);
-}
-
 .main-header .main-nav > li > a::before {
   content: "";
   position: absolute;
@@ -399,6 +393,10 @@ body {
   opacity: 1;
 }
 
+.menuToggleBg-Show {
+  background-color: var(--shade-light);
+}
+
 /* Start Mega Menu */
 .main-header .mega-menu {
   position: absolute;
@@ -407,12 +405,23 @@ body {
   padding: 2rem;
   background-color: #fff;
   border-bottom: 3px solid var(--color-primary);
-  z-index: -1;
   display: flex;
   gap: 2.5rem;
-  top: calc(100% + 2rem);
-  opacity: 0;
   transition: top var(--main-transition), opacity var(--main-transition);
+}
+
+.menu-hide {
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  top: calc(100% + 3rem);
+}
+
+.menu-show {
+  visibility: visible;
+  opacity: 1;
+  z-index: 100;
+  top: calc(100% + 5px);
 }
 
 @media screen and (max-width: 767px) {
@@ -2082,7 +2091,7 @@ footer .copyright span {
   transition: 1s;
 }
 
-.back-to-top:hover{
+.back-to-top:hover {
   opacity: 1;
 }
 
